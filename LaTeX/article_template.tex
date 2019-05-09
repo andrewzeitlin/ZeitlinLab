@@ -1,0 +1,118 @@
+\documentclass[11pt]{article}
+
+\title{title here}
+\author{Author\thanks{author's affiliation}, Another author\thanks{another affiliation}}
+\date{This version: \today
+}
+
+%--  page setup --%
+\usepackage[letterpaper,margin=1in]{geometry}
+
+%---  bibliography etc ---%
+%\usepackage[sortcites=true,citestyle=authoryear-comp,style=authoryear]{biblatex} % style=apa,
+%\usepackage[sortcites=true,style=chicago-authordate,strict,backend=biber]{biblatex}
+\usepackage[authoryear,sort&compress,round]{natbib}
+\bibliographystyle{aer}
+
+%---  math ---%
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+%---  lists ---%
+\usepackage{enumerate}
+
+%---  figures ---%
+\usepackage{graphicx}
+%\usepackage[position=bottom]{subfig} %}\usepackage{subcaption} %\usepackage{subfigure}
+%\usepackage{tikz}
+%\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,fit,positioning,shapes.symbols,chains}
+%\usetikzlibrary{trees}
+%\usepackage{tikz-qtree}
+%\usetikzlibrary{backgrounds,fit,positioning}
+%\usepackage[edges]{forest}
+
+
+%--  tables --%
+\usepackage{booktabs}
+% \usepackage{multirow}
+% \usepackage{rotating}
+% \usepackage{afterpage} 
+% \usepackage{makecell}
+% \usepackage{pdflscape}
+% \usepackage{longtable}
+% \usepackage{color,colortbl}
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+\usepackage{changepage}   % for the adjustwidth environment
+\newenvironment{tablefooter}{\begin{adjustwidth}{2cm}{}}{\end{adjustwidth}}
+\usepackage{caption} % for controlling caption widths
+
+
+%---  Some misc. shortcuts ---%
+\providecommand{\Pr}{\mathrm{Pr}}
+\providecommand{\exp}{\mathrm{exp}}
+\providecommand{\e}{\varepsilon}
+\providecommand{\E}{\mathrm{E}}
+%\providecommand{\1}{\mathcal{1}}
+\DeclareMathOperator{\rank}{rank}
+
+%---  FOR APPENDIX  ---%
+\usepackage{appendix}
+\renewcommand{\appendixname}{Appendix}
+
+
+%==========================================================================%
+\begin{document}
+%==========================================================================%
+
+\maketitle
+
+\begin{abstract}
+% abstract here
+\end{abstract}
+
+\clearpage
+
+\section{Introduction}\label{s:introduction}
+
+
+
+%==========================================================================%
+%       BIBLIOGRAPHY                                                       %
+%==========================================================================%
+\cleardoublepage
+\bibliography{thelibrary}  % natbib 
+
+
+
+%==========================================================================%
+%       Appendices                                                         %
+%==========================================================================%
+\cleardoublepage
+\appendix
+\noappendicestocpagenum \addappheadtotoc
+% Below, adding 'Appendix' to section header but NOT to TOC entry or to calls to the section label in text.
+\makeatletter
+\def\@seccntformat#1{Appendix\ \csname the#1\endcsname\quad}
+\def\@subseccntformat#1{\csname the#1\endcsname\quad}
+\makeatother
+%%  And adding Appendix counter to table and figure numbers
+\setcounter{table}{0} \setcounter{figure}{0}
+\renewcommand\thetable{\Alph{section}.\arabic{table}}
+\renewcommand\thefigure{\Alph{section}.\arabic{figure}}
+%%%\section{Further survey descriptives}
+
+
+%--------------------------------------------------------------------------%
+% THEORY
+%--------------------------------------------------------------------------%
+\clearpage 
+\section{An appendix section}\label{s:appendix_section}
+
+
+
+%==========================================================================%
+\end{document}
+%==========================================================================%

@@ -1,0 +1,65 @@
+\documentclass[beamer,aspectratio=169]{beamer}
+\input{beamer/hawthorne.sty}
+
+% \usepackage{tikz}
+% \usetikzlibrary{positioning, calc, shapes.geometric, shapes.multipart, %
+%   shapes, arrows.meta, arrows, decorations.markings, external, trees, %
+%   overlay-beamer-styles}
+
+
+%\usepackage{xcolor}  % loaded already in /beamer/hawthorne.sty
+
+\makeatletter
+\def\mathcolor#1#{\@mathcolor{#1}}
+\def\@mathcolor#1#2#3{%
+  \protect\leavevmode
+  \begingroup
+    \color#1{#2}#3%
+  \endgroup
+}
+\makeatother
+
+%  Document info:
+\title%[Short Paper Title]% (optional, use only with long paper titles)
+    {Paper title} 
+%\subtitle{a subtitle} % (optional)
+\author% [] % (optional, use only with lots of authors)
+  {Andrew Zeitlin }
+\institute%[Georgetown University] % (optional, but mostly needed)
+    {Georgetown University }
+\date%[Short Occasion] % (optional)
+    {\today}
+\subject{Presentations} %
+
+\providecommand{\e}{\varepsilon}%%
+
+
+%=================================================================%
+\begin{document}
+
+\dark 
+\titleslide 
+\light 
+
+%\pictureslide{graphics_file_here}
+
+\sectionbreak{A section break}
+
+%=================================================================%
+\renewcommand\appendixname{Appendix}
+\appendix
+%=================================================================%
+
+\dark
+\titleslide
+\light
+
+% \begin{frame}[allowframebreaks]{References}
+% \bibliographystyle{agsm} %alternatives: econometrica, etc.
+% \begin{scriptsize}
+% \bibliography{thelibrary}
+% \end{scriptsize}
+% \end{frame}
+
+
+\end{document}

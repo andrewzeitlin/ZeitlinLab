@@ -1,0 +1,84 @@
+
+%  Metropolis theme and associated options/choices
+\usetheme[block=fill,outer/numbering=none]{metropolis} % progressbar=frametitle,
+
+%  Defining colors for subsequent use  %
+\usepackage{xcolor}
+\definecolor{myblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{mygold}{rgb}{1.0, 0.75, 0.0}
+\definecolor{mygreen}{rgb}{0.0, 0.38, 0.00}%  {0.0, 0.5, 0.0}
+
+
+\newcommand{\light}{\setbeamercolor{normal text}{%
+    fg=myblue, %fg=mDarkTeal, ultramarine
+    bg=black!2}
+    }
+\newcommand{\dark}{\setbeamercolor{normal text}{%
+  fg=black!2,
+  bg=myblue%, ultramarine % bg=mDarkTeal %
+  }
+}
+
+%-- special slide types --% 
+\newcommand{\sectionbreak}[1]{%
+  \dark 
+  \section{#1} 
+  \addtocounter{framenumber}{-1}
+  \light
+}
+\newcommand{\pictureslide}[1]{%
+  {
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{background canvas}{\includegraphics[height=\paperheight, width =\paperwidth]{#1}}
+  \begin{frame}[plain]
+  \end{frame}
+  }
+}
+\newcommand{\titleslide}{
+  \begin{frame}[plain]
+  \titlepage
+  \end{frame}
+  \addtocounter{framenumber}{-1}
+}
+
+% %  Getting rid of progress bar
+% \setbeamercolor{progress bar}{%
+%   use=alerted text,
+%   fg=alerted text.fg,
+%   bg=alerted text.fg!50!black!30
+% }
+
+
+%  Handout mode.
+\mode<handout>{   % Insert here commands to be used just in handout mode
+    \usepackage{pgfpages}
+    \pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+    %\setbeamercolor{background canvas}{bg=black!5}
+    %  \setbeameroption{hide notes}
+
+}
+
+%  Math
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%  Natbib for bibliographies
+\usepackage{natbib}
+\renewcommand{\bibsection}{}
+\usepackage{appendixnumberbeamer}
+
+%  Tables 
+\usepackage{booktabs}
+
+%  Figures
+\usepackage{graphicx}
+
+% Some custom options, tweaking appearances %
+\numberwithin{equation}{section} %
+\numberwithin{theorem}{section} %
+\numberwithin{figure}{section} %
+\numberwithin{table}{section} %
+\setbeamertemplate{theorems}[numbered] %
+\setbeamertemplate{table}[numbered] %
+\setbeamertemplate{figure}[numbered] %
+\setbeamertemplate{caption}[numbered]
