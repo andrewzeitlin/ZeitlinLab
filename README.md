@@ -21,14 +21,14 @@ Files stored in this repository provide:
 
 ## Lab alumni
 
+- Richard Appell, Learning and Evaluation Specialist, BeTheBusiness.
+- Sarait Cardenas-Rodriguez, Consultant, Inter-American Development Bank.
+- Aniran Chowdhury, Ph.D. student in Political Science, UC Berkeley.  
 - Claire Cullen. DPhil student in Public Policy, Blavatnik School of Government, University of Oxford. 
 - Robbie Dean. Research and Evaluation Specialist, Teach For All. 
-- Saahil Karpe.  Research Analyst, DIME, World Bank.
-- Sarait Cardenas-Rodriguez, Consultant, Inter-American Development Bank.
-- Richard Appell, Learning and Evaluation, BeTheBusiness.
 - Sakari Deichsel, Economist, USAID. 
+- Saahil Karpe.  Research Analyst, DIME, World Bank.
 - Pooja Suri, Ph.D. student in Health Economics, UC Berkeley.
-- Aniran Chowdhury, Ph.D. student in Political Science, UC Berkeley.  
 
 <br />
 <br />
