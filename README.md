@@ -27,7 +27,9 @@ Files stored in this repository provide:
 - Claire Cullen. DPhil student in Public Policy, Blavatnik School of Government, University of Oxford. 
 - Robbie Dean. Research and Evaluation Specialist, Teach For All. 
 - Sakari Deichsel, Economist, USAID. 
+- Sohum Patel, MD Candidate, Dartmouth Geisel School of Medicine.
 - Saahil Karpe.  Research Analyst, DIME, World Bank.
+- Samuel Solomon.  Ph.D. student in Economics, Yale University.
 - Pooja Suri, Ph.D. student in Health Economics, UC Berkeley.
 
 <br />
