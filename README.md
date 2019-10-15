@@ -6,7 +6,7 @@ Files stored in this repository provide:
 - templates for use with LaTeX projects (articles and presentations);
 - a model .gitignore and .gitattributes file (the latter requires git-lfs)
 
-##  Lab members 
+#  Lab members 
 
 ## Current members 
 
@@ -23,7 +23,7 @@ Files stored in this repository provide:
 
 - Richard Appell, Learning and Evaluation Specialist, BeTheBusiness.
 - Sarait Cardenas-Rodriguez, Consultant, Inter-American Development Bank.
-- Aniran Chowdhury, Ph.D. student in Political Science, UC Berkeley.  
+- Anirvan Chowdhury, Ph.D. student in Political Science, UC Berkeley.  
 - Claire Cullen. DPhil student in Public Policy, Blavatnik School of Government, University of Oxford. 
 - Robbie Dean. Research and Evaluation Specialist, Teach For All. 
 - Sakari Deichsel, Economist, USAID. 
