@@ -15,6 +15,7 @@ Files stored in this repository provide:
 - Ali Hamza (gui2de Senior Data and Research Manager) 
 
 *Student research assistants*
+- Giuliana Daga (Research Assistant)
 - Ana Gabriela Tamayo Alatriste (Research Assistant)
 - Aruj Shukla (Research Assistant)
 - Showroop Pokhrel (Research Assistant)
