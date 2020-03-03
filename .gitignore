@@ -5,6 +5,7 @@
 # Wiki files
 *wiki/*
 *.wiki
+wiki/*
 
 #  Sublime Text
 *.sublime-project
