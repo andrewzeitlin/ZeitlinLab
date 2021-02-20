@@ -12,13 +12,12 @@ Files stored in this repository provide:
 
 *Gui2de permanent staff*
 - Beatrice Leydier (gui2de Data and Research Manager)
-- Ali Hamza (gui2de Senior Data and Research Manager) 
 
-*Student research assistants*
+*Research assistants and project staff*
+- Kevin Conklin (Research Assistant)
 - Giuliana Daga (Research Assistant)
-- Ana Gabriela Tamayo Alatriste (Research Assistant)
-- Aruj Shukla (Research Assistant)
-- Showroop Pokhrel (Research Assistant)
+- Grace Han (Research Assistant)
+- Rachel Swindle (Project manager) 
 
 ## Lab alumni
 
@@ -31,8 +30,11 @@ Files stored in this repository provide:
 - Gerald Ipapa, Ph.D. student in Economics, University of Delaware.
 - Sohum Patel, MD Candidate, Dartmouth Geisel School of Medicine.
 - Saahil Karpe.  Research Analyst, DIME, World Bank.
+- Showroop Pokhrel (Analyst, Compass Lexecon).
+- Aruj Shukla (Research Fellow, Center for Economic and Social Research, University of Southern California).
 - Samuel Solomon.  Ph.D. student in Economics, Yale University.
 - Pooja Suri, Ph.D. student in Health Economics, UC Berkeley.
+- Ana Gabriela Tamayo Alatriste (Senior Policy and Communications Associate, Innovations for Poverty Action).
 
 <br />
 <br />
