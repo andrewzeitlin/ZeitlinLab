@@ -20,6 +20,7 @@ Files stored in this repository provide:
 - Kevin Conklin
 - Helena Dill
 - Atsuhiro Oguri
+- Miti Shah
 
 ## Lab alumni
 
