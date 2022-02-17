@@ -10,7 +10,7 @@ Files stored in this repository provide:
 
 ## Current members 
 
-*Gui2de permanent staff*
+*Gui2de full-time staff*
 - Beatrice Leydier (gui2de Data and Research Manager)
 - Grace Han (re:Build Project Manager)
 
