@@ -1,3 +1,8 @@
+---
+name: surveycto
+description: Instructions and conventions for working with SurveyCTO forms and survey design in this project.
+---
+
 # SurveyCTO: Key Concepts for Working with Survey Data
 
 SurveyCTO is a platform for designing and collecting survey data, primarily on mobile devices.
@@ -136,6 +141,48 @@ Repeat group suffixes (`_1`, `_2`, …) are appended **after** the full prefixed
 
 All four look identical in the raw CSV. Use the survey tab relevance conditions and form
 version history to distinguish them.
+
+---
+
+## Fixed-width groups as an alternative to repeat groups
+
+Some surveys capture multiple instances of a concept (e.g. up to 3 businesses, up to 3 jobs)
+using **fixed groups** rather than a repeat group. Typically (although this is not an inherent feature of SurveyCTO), each instance gets its own `begin group` /
+`end group` block in the survey tab, and every field inside is given a hard-coded numeric
+suffix at design time (`profit_1`, `profit_2`, `profit_3`).
+
+Key differences from repeat groups:
+- The suffix is part of the variable name, not added by the export engine — there is no
+  `PARENT_KEY` linking and no long-format export option for these fields
+- The maximum number of instances is fixed at form-design time
+- Respondents with fewer instances than the maximum have blank values in the later suffix
+  columns, identical in appearance to repeat group wide-format blanks
+- Each group typically has its own relevance condition gating whether that instance was
+  collected (e.g. `string-length(${description_2}) != 0`)
+
+When you see variables with numeric suffixes in exported data, check the survey tab to
+determine whether they come from a repeat group or from fixed groups — the analytical
+implications differ.
+
+---
+
+## Entry-screen gating and structurally missing sections
+
+A common pattern is a yes/no "entry screen" question that gates an entire section of
+follow-up questions. For example: "Do you own a business?" → if yes, a full block of
+business-detail questions is shown; if no, the entire block is skipped and all variables
+in it are blank in the export.
+
+**Critical analytical implication:** when the entry screen is negative, all variables in
+the gated section are structurally missing — their true value is determined by the survey
+design, not by item non-response. Conversely, if the entry screen is positive but a
+required variable within the section is still blank, that is likely genuine missing data
+and should be treated differently from the structural case.
+
+**Do not assume what value to assign to structurally missing observations.** The right
+value depends on the research context (e.g. zero, NA, or something else). Always ask the
+user what imputed value to use before writing any code that fills in blanks caused by a
+negative entry screen.
 
 ---
 
