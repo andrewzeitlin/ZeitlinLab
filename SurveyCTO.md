@@ -151,3 +151,16 @@ Together these allow you to:
 2. Decode coded values (e.g., `1` → `"Yes"`, `2` → `"No"`)
 3. Understand why a variable has missing values (trace the `relevant` condition)
 4. Understand the structure of repeat groups and what each `_N` suffix represents
+
+---
+
+## Updating This File
+
+After completing a task, if you encountered any SurveyCTO behavior, quirk, or
+convention not covered above, ask the user:
+
+"I noticed [X] — should I add this to the SurveyCTO skills file?"
+
+If yes, propose a specific addition and offer to edit `.claude/skills/SurveyCTO/SKILL.md` directly.
+
+Before adding, check if the learning point is already covered or implied by an existing entry. Prefer refining existing entries over adding new ones.
