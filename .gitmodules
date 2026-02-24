@@ -1,0 +1,3 @@
+[submodule "claude_skills"]
+	path = claude_skills
+	url = git@github.com:andrewzeitlin/claude_skills.git
